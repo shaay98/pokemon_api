@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon App</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-pink-100 flex">
+    <header>
+      <h2 class="text-xl font-bold mb-4">Pokemon List</h2>
+    </header>
+    <aside class="w-1/4 bg-white h-screen shadow overflow-y-auto">
+      <button
+        class="w-full bg-yellow-300 text-white py-2 mb-4 rounded"
+        id="shuffleBtn"
+      >
+        Shuffle
+      </button>
+      <ul id="pokemonList" class="space-y-2"></ul>
+    </aside>
+    <main class="w-3/4 p-6">
+      <div class="max-w-lg mx-auto bg-white p-6 rounded-xl shaow-md">
+        <h1 class="text-3xl font-bold underline mb-4">Pokemon App</h1>
+        <div class="flex gap-2">
+          <input
+            type="text"
+            id="searchInput"
+            name="searchInput"
+            placeholder="Enter Pokemon Name Here"
+            class="p-2 border w-full border-gray-300 rounded"
+          />
+          <button id="searchBtn class=bg-blue-500 text-white px-4 py-2 rounded">
+            Search
+          </button>
+        </div>
+        <div id="searchResult class=mt-4"></div>
+        <h2 class="text-xl font-bold mt-6">Favorites</h2>
+        <ul id="favoriteList" class="mt-2 space-y-2"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
